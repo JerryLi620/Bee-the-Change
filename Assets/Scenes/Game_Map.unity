@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -236,8 +236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hexPrefab: {fileID: 25759866395505241, guid: 9b174ed891d794e41813d6e77005038c, type: 3}
-  gridWidth: 11
-  gridHeight: 11
+  gridWidth: 5
+  gridHeight: 5
   gap: 0.1
 --- !u!4 &1412287050
 Transform:

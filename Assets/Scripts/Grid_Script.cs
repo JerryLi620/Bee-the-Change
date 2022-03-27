@@ -56,6 +56,29 @@ public class Grid_Script : MonoBehaviour
     {
         for (int y = 0; y < gridHeight; y++)
         {
+          if (y==0 || y==4){
+            for (int x = 1; x < gridWidth-1; x++)
+            {
+                Transform hex = Instantiate(hexPrefab) as Transform;
+                Vector2 gridPos = new Vector2(x, y);
+                hex.position = CalcWorldPos(gridPos);
+                hex.transform.Rotate(90.0f,0.0f,0.0f);
+                hex.parent = this.transform;
+                hex.name = "Hexagon" + x + "|" + y;
+            }
+          }
+          if (y==1 || y==3){
+            for (int x = 0; x < gridWidth-1; x++)
+            {
+                Transform hex = Instantiate(hexPrefab) as Transform;
+                Vector2 gridPos = new Vector2(x, y);
+                hex.position = CalcWorldPos(gridPos);
+                hex.transform.Rotate(90.0f,0.0f,0.0f);
+                hex.parent = this.transform;
+                hex.name = "Hexagon" + x + "|" + y;
+            }
+          }
+          if (y==2){
             for (int x = 0; x < gridWidth; x++)
             {
                 Transform hex = Instantiate(hexPrefab) as Transform;
@@ -65,6 +88,7 @@ public class Grid_Script : MonoBehaviour
                 hex.parent = this.transform;
                 hex.name = "Hexagon" + x + "|" + y;
             }
+          }
+          }
         }
-    }
 }
