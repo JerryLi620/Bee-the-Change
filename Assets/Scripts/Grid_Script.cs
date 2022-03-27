@@ -61,6 +61,7 @@ public class Grid_Script : MonoBehaviour
                 Transform hex = Instantiate(hexPrefab) as Transform;
                 Vector2 gridPos = new Vector2(x, y);
                 hex.position = CalcWorldPos(gridPos);
+                hex.transform.Rotate(90.0f,0.0f,0.0f);
                 hex.parent = this.transform;
                 hex.name = "Hexagon" + x + "|" + y;
             }
