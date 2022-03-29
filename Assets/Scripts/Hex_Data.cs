@@ -10,4 +10,5 @@ public class Hex_Data : MonoBehaviour
     public int FlowerDensity = 0;
     public int LifeExpectancy = 0;
     public int Happiness = 0;
+
 }
