@@ -2,8 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class OutfitChanger : MonoBehaviour
 {
+    [Header("Sprite to Change")]
+    public SpriteRenderer bodyPart;
+
+    [Header("Sprite to Cycle Through")]
+    public List<Sprite> options = new List<Sprite>();
+
     // Start is called before the first frame update
     void Start()
     {
