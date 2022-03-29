@@ -10,6 +10,10 @@ public class Turn_Base: MonoBehaviour
     public Text DialogueText;
     public Text TurnCount;
     public int TurnNumber = 0;
+    public Button Button1;
+    public Button Button2;
+    public Button Button3;
+
     void Start()
     {
         state = TurnState.START;
@@ -32,12 +36,14 @@ public class Turn_Base: MonoBehaviour
             EndGame();
         }
     }
-
     void EndGame()
     {
         if (state == TurnState.WON)
         {
             DialogueText.text = "You won!";
+            Button1.enabled = false;
+            Button2.enabled = false;
+            Button3.enabled = false;
         }
     }
     void PlayerTurn()

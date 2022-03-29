@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 389074147}
   - component: {fileID: 389074146}
   m_Layer: 5
-  m_Name: Option 1
+  m_Name: Option1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 640929808}
   - component: {fileID: 640929807}
   m_Layer: 5
-  m_Name: Option 3
+  m_Name: Option3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 1078212253}
   - component: {fileID: 1078212252}
   - component: {fileID: 1078212251}
+  - component: {fileID: 1078212254}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -955,6 +956,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1078212254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078212250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7211f674d55429fae62d7c08570927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1158692194
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1001,9 @@ MonoBehaviour:
   DialogueText: {fileID: 700275563}
   TurnCount: {fileID: 635146769}
   TurnNumber: 0
+  Button1: {fileID: 389074146}
+  Button2: {fileID: 1656567702}
+  Button3: {fileID: 640929807}
 --- !u!4 &1158692196
 Transform:
   m_ObjectHideFlags: 0
@@ -1141,7 +1157,7 @@ GameObject:
   - component: {fileID: 1656567703}
   - component: {fileID: 1656567702}
   m_Layer: 5
-  m_Name: Option 2
+  m_Name: Option2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
