@@ -7,7 +7,7 @@ public class Camera_Behavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      Camera.main.orthographicSize = 5.0f;
+      Camera.main.orthographicSize = 6.0f;
     }
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class Camera_Behavior : MonoBehaviour
       if ((Input.GetMouseButtonDown(0)) && (Camera.main.orthographicSize != 1.3f))
         Camera.main.orthographicSize = 1.3f;
       else if(Input.GetMouseButtonDown(0))
-        Camera.main.orthographicSize = 5.0f;
+        Camera.main.orthographicSize = 6.0f;
       //if (Input.GetMouseButton(0))
       //{
     	   //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
