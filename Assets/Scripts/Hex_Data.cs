@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hex_Data : MonoBehaviour
 {
-    public int population = 0;
+    public int popularity = 0;
     public int honeyProduction = 0;
     public int beeRights = 0;
     public int flowerDensity = 0;
