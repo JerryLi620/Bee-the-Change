@@ -5,10 +5,10 @@ using UnityEngine;
 public class Hex_Data : MonoBehaviour
 {
     public int population = 0;
-    public int HoneyProduction = 0;
-    public int BeeRights = 0;
-    public int FlowerDensity = 0;
-    public int LifeExpectancy = 0;
-    public int Happiness = 0;
+    public int honeyProduction = 0;
+    public int beeRights = 0;
+    public int flowerDensity = 0;
+    public int lifeExpectancy = 0;
+    public int happiness = 0;
 
 }
