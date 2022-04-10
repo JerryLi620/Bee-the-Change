@@ -27,6 +27,12 @@ public class Turn_Base: MonoBehaviour
         PlayerTurn();
     }
 
+    void PlayerTurn()
+    {
+        DialogueText.text = "Choose an action:";
+        TurnCount.text = "CurrentTurn: " + TurnNumber;
+    }
+
     void PlayerAction()
     {
         DialogueText.text = "This is an action.";
@@ -45,11 +51,6 @@ public class Turn_Base: MonoBehaviour
             Button2.enabled = false;
             Button3.enabled = false;
         }
-    }
-    void PlayerTurn()
-    {
-        DialogueText.text = "Choose an action:";
-        TurnCount.text = "CurrentTurn: " + TurnNumber;
     }
 
     public void OnClickBotton()
