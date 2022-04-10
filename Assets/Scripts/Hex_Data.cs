@@ -4,11 +4,27 @@ using UnityEngine;
 
 public class Hex_Data : MonoBehaviour
 {
-    public int popularity = 0;
-    public int honeyProduction = 0;
-    public int beeRights = 0;
-    public int flowerDensity = 0;
-    public int lifeExpectancy = 0;
-    public int happiness = 0;
+    public string topTrait;
+
+void Start()
+{
+int random_number = Random.Range(1, 7);
+  if(random_number == 1){
+    topTrait = "honeyProduction";
+  }
+  if(random_number == 2){
+    topTrait = "beeRights";
+  }
+  if(random_number == 3){
+    topTrait = "flowerDensity";
+  }
+  if(random_number == 4){
+    topTrait = "lifeExpectancy";
+  }
+  if(random_number == 5){
+    topTrait = "happiness";
+  }
+  DontDestroyOnLoad(this.gameObject);
+}
 
 }

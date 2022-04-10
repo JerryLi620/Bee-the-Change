@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 25759866395505241}
   - component: {fileID: 6379380679169020045}
+  - component: {fileID: 8002001519421129242}
   m_Layer: 0
   m_Name: Hex_Unit
   m_TagString: Untagged
@@ -45,6 +46,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8648188
   m_Center: {x: -0.0002641678, y: -0.08421576, z: 0.2573433}
+--- !u!114 &8002001519421129242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797230433070180579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59971aa1a76454e7abb4d8971cf94b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popularity: 0
+  honeyProduction: 0
+  beeRights: 0
+  flowerDensity: 0
+  lifeExpectancy: 0
+  happiness: 0
 --- !u!1 &3848350699138145202
 GameObject:
   m_ObjectHideFlags: 0
