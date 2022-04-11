@@ -10,7 +10,6 @@ public class BuildManager : MonoBehaviour
   public GameObject grid;
   public CustomCursor CusCursor;
   public Tile[] tiles;
-  public GameObject Disable;
 
   private void Update()
   {
@@ -37,12 +36,9 @@ public class BuildManager : MonoBehaviour
 
   public void BuildBuilding(Building building){
     CusCursor.gameObject.SetActive(true);
-    Disable.GetComponent<Click_Detection>().enabled = false;
     CusCursor.GetComponent<SpriteRenderer>().sprite  = building.GetComponent<SpriteRenderer>().sprite;
     Cursor.visible = false;
     BuildingToPlace = building;
-
-
 
   }
 
