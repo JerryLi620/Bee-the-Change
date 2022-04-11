@@ -10,6 +10,7 @@ public class BuildManager : MonoBehaviour
   public GameObject grid;
   public CustomCursor CusCursor;
   public Tile[] tiles;
+  public GameObject Disable;
 
   private void Update()
   {
@@ -27,18 +28,21 @@ public class BuildManager : MonoBehaviour
         Instantiate(BuildingToPlace, NearestTile.transform.position + new Vector3(0,0,0.1f), Quaternion.identity);
         BuildingToPlace = null;
         NearestTile.isOccupied = true;
-        //grid.SetActive(false);
         CusCursor.gameObject.SetActive(false);
         Cursor.visible = true;
       }
     }
+
   }
 
   public void BuildBuilding(Building building){
     CusCursor.gameObject.SetActive(true);
+    Disable.GetComponent<Click_Detection>().enabled = false;
     CusCursor.GetComponent<SpriteRenderer>().sprite  = building.GetComponent<SpriteRenderer>().sprite;
     Cursor.visible = false;
     BuildingToPlace = building;
+
+
 
   }
 
