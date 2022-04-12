@@ -58,12 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59971aa1a76454e7abb4d8971cf94b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popularity: 0
-  honeyProduction: 0
-  beeRights: 0
-  flowerDensity: 0
-  lifeExpectancy: 0
-  happiness: 0
+  topTrait: 
 --- !u!1 &3848350699138145202
 GameObject:
   m_ObjectHideFlags: 0
