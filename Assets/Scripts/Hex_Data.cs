@@ -23,8 +23,7 @@ int random_number = Random.Range(1, 7);
   }
   if(random_number == 5){
     topTrait = "happiness";
-  }
-  DontDestroyOnLoad(this.gameObject);
 }
 
+}
 }
