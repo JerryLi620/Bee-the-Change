@@ -24,7 +24,7 @@ public class BuildManager : MonoBehaviour
         }
       }
       if (NearestTile.isOccupied == false){
-        Instantiate(BuildingToPlace, NearestTile.transform.position + new Vector3(0,0,0.1f), Quaternion.identity);
+        Instantiate(BuildingToPlace, NearestTile.transform.position + new Vector3(0.05f,0.05f,0.1f), Quaternion.identity);
         BuildingToPlace = null;
         NearestTile.isOccupied = true;
         CusCursor.gameObject.SetActive(false);
