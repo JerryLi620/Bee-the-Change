@@ -43,12 +43,12 @@ public class Turn_Base: MonoBehaviour
     void PlayerAction()
     {
         DialogueText.text = "This is an action.";
-        if (TurnNumber == 10 && Map_Behavior.popularity >= 55)
+        if (TurnNumber == 10 && Map_Behavior.popularity >= 53)
         {
             state = TurnState.WON;
             EndGame();
         }
-        else if (TurnNumber == 10 && Map_Behavior.popularity < 55)
+        else if (TurnNumber == 10 && Map_Behavior.popularity < 53)
         {
             state = TurnState.LOST;
             EndGame();
@@ -79,7 +79,7 @@ public class Turn_Base: MonoBehaviour
         Button1.enabled = true;
         Button2.enabled = true;
         PlayerAction();
-        re .GenerateRandomEvent();
+        re.GenerateRandomEvent();
 
     }
 }
