@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public enum TurnState {START, PLAYERTURN, WON, LOST}
+public enum TurnState {START, POLICY, BUILD, NEXT, WON, LOST}
 public class Turn_Base: MonoBehaviour
 {
     public TurnState state;
@@ -30,19 +30,55 @@ public class Turn_Base: MonoBehaviour
     void SetupGame()
     {
         Debug.Log("start");
-        state = TurnState.PLAYERTURN;
+        Button1.gameObject.SetActive(false);
+        Button2.gameObject.SetActive(false);
+        Button3.gameObject.SetActive(false);
+        state = TurnState.POLICY;
         PlayerTurn();
+    }
+    public void Policy()
+    {
+        state = TurnState.BUILD;
+        PlayerTurn();
+    }
+
+    public void Build()
+    {
+        state = TurnState.NEXT;
+        PlayerTurn();
+    }
+    public void NextRound()
+    {
+        TurnNumber += 1;
+        TurnCount.text = "CurrentTurn: " + TurnNumber;
+        Button1.enabled = true;
+        Button2.enabled = true;
+        state = TurnState.POLICY;
+        PlayerTurn();
+        re.GenerateRandomEvent();
     }
 
     void PlayerTurn()
     {
-        DialogueText.text = "Choose an action:";
         TurnCount.text = "CurrentTurn: " + TurnNumber;
-    }
-
-    void PlayerAction()
-    {
-        DialogueText.text = "This is an action.";
+        if (state == TurnState.POLICY){
+            DialogueText.text = "Something just happened!";
+            Button1.gameObject.SetActive(true);
+            Button2.gameObject.SetActive(false);
+            Button3.gameObject.SetActive(false);
+        }
+        else if (state == TurnState.BUILD){
+            DialogueText.text = "You probably want to build something!";
+            Button1.gameObject.SetActive(false);
+            Button2.gameObject.SetActive(true);
+            Button3.gameObject.SetActive(false);
+        }
+        else if (state == TurnState.NEXT){
+            DialogueText.text = "Clicked to start the next round.";
+            Button1.gameObject.SetActive(false);
+            Button2.gameObject.SetActive(false);
+            Button3.gameObject.SetActive(true);
+        }
         if (TurnNumber == 10 && Map_Behavior.popularity >= 53)
         {
             state = TurnState.WON;
@@ -59,27 +95,18 @@ public class Turn_Base: MonoBehaviour
         if (state == TurnState.WON)
         {
             DialogueText.text = "You won!";
-            Button1.enabled = false;
-            Button2.enabled = false;
-            Button3.enabled = false;
+            Button1.gameObject.SetActive(false);
+            Button2.gameObject.SetActive(false);
+            Button3.gameObject.SetActive(false);
         }
         else if (state == TurnState.LOST)
         {
           DialogueText.text = "You lost.";
-          Button1.enabled = false;
-          Button2.enabled = false;
-          Button3.enabled = false;
+          Button1.gameObject.SetActive(false);
+          Button2.gameObject.SetActive(false);
+          Button3.gameObject.SetActive(false);
         }
     }
 
-    public void NextRound()
-    {
-        TurnNumber += 1;
-        TurnCount.text = "CurrentTurn: " + TurnNumber;
-        Button1.enabled = true;
-        Button2.enabled = true;
-        PlayerAction();
-        re.GenerateRandomEvent();
 
-    }
 }

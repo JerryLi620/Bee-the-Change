@@ -17,7 +17,6 @@ public class PopUpSystemPolicy: MonoBehaviour
     else if(Activated == true){
       Activated = false;
       canvas.enabled = false;
-      PolicyBotton.enabled = false;
     }
   }
 }

@@ -7,7 +7,7 @@ public class PopUpSystemBuild : MonoBehaviour
   public Canvas canvas;
   public bool Activated = false;
   public Button BuildBotton;
-  
+
   public void PopUp(){
     if (Activated == false){
       Activated = true;
@@ -16,8 +16,6 @@ public class PopUpSystemBuild : MonoBehaviour
     else if(Activated == true){
       Activated = false;
       canvas.enabled = false;
-      BuildBotton.enabled = false;
-
     }
 }
 }

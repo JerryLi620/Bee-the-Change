@@ -39,7 +39,16 @@ public class BuildManager : MonoBehaviour
     CusCursor.GetComponent<SpriteRenderer>().sprite  = building.GetComponent<SpriteRenderer>().sprite;
     Cursor.visible = false;
     BuildingToPlace = building;
+  }
 
+  private int HCimprove;
+  private int BRimprove;
+  private int PSimprove;
+  private int BHimprove;
+  private int DCimprove;
+
+  public void BuildHC(){
+    
   }
 
 }
