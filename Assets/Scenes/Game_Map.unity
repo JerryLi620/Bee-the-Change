@@ -670,7 +670,7 @@ MonoBehaviour:
         m_MethodName: BuildBuilding
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8450170905998334342, guid: f3a3e99bf01ca43f1bb02a2638cb5ea5, type: 3}
+          m_ObjectArgument: {fileID: 8460515649990880931, guid: d357924aad468419e989cefa58cab857, type: 3}
           m_ObjectArgumentAssemblyTypeName: Building, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3083,8 +3083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.79719543, y: 0}
+  m_SizeDelta: {x: -24.1235, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743174688
 MonoBehaviour:
@@ -4262,7 +4262,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1277490100
@@ -5445,8 +5445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.3934937, y: 0}
+  m_SizeDelta: {x: -29.3519, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773778055
 MonoBehaviour:
