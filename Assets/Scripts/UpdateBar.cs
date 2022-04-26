@@ -26,5 +26,10 @@ public class UpdateBar : MonoBehaviour
    
     }
 
+    void Update()
+    {
+        currentHealth = Map_Behavior.honeyProduction ;
+        healthBar.SetHealth(currentHealth);
+    }
 
 }
