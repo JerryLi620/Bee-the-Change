@@ -9,26 +9,9 @@ public class UpdateBar : MonoBehaviour
 
     public HealthBar healthBar;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            newStat(5);
-        }
-    }
-
-    void newStat(int change)
-    {
-        currentHealth += change;
-
+        currentHealth = Map_Behavior.honeyProduction ;
         healthBar.SetHealth(currentHealth);
     }
 }
