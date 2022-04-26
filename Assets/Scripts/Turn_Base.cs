@@ -50,7 +50,7 @@ public class Turn_Base: MonoBehaviour
     public void NextRound()
     {
         TurnNumber += 1;
-        TurnCount.text = "CurrentTurn: " + TurnNumber;
+        TurnCount.text = "Current Turn: " + TurnNumber;
         Button1.enabled = true;
         Button2.enabled = true;
         state = TurnState.POLICY;
@@ -60,7 +60,7 @@ public class Turn_Base: MonoBehaviour
 
     void PlayerTurn()
     {
-        TurnCount.text = "CurrentTurn: " + TurnNumber;
+        TurnCount.text = "Current Turn: " + TurnNumber;
         if (state == TurnState.POLICY){
             DialogueText.text = "Something just happened!";
             Button1.gameObject.SetActive(true);
