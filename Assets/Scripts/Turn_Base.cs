@@ -79,12 +79,12 @@ public class Turn_Base: MonoBehaviour
             Button2.gameObject.SetActive(false);
             Button3.gameObject.SetActive(true);
         }
-        if (TurnNumber == 10 && Map_Behavior.popularity >= 53)
+        if (TurnNumber == 10 && Map_Behavior.popularity >= 55)
         {
             state = TurnState.WON;
             EndGame();
         }
-        else if (TurnNumber == 10 && Map_Behavior.popularity < 53)
+        else if (TurnNumber == 10 && Map_Behavior.popularity < 55)
         {
             state = TurnState.LOST;
             EndGame();
