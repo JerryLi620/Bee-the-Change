@@ -41,14 +41,5 @@ public class BuildManager : MonoBehaviour
     BuildingToPlace = building;
   }
 
-  private int HCimprove;
-  private int BRimprove;
-  private int PSimprove;
-  private int BHimprove;
-  private int DCimprove;
-
-  public void BuildHC(){
-    
-  }
 
 }
