@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class BuildManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class BuildManager : MonoBehaviour
   public GameObject grid;
   public CustomCursor CusCursor;
   public Tile[] tiles;
+  public TMP_Text News;
 
   private void Update()
   {
@@ -41,14 +43,28 @@ public class BuildManager : MonoBehaviour
     BuildingToPlace = building;
   }
 
-  private int HCimprove;
-  private int BRimprove;
-  private int PSimprove;
-  private int BHimprove;
-  private int DCimprove;
-
   public void BuildHC(){
-
+    Map_Behavior.honeyProduction+=2;
+    News.text = "The honey production of your country increased!";
   }
 
+  public void BuildBR(){
+    Map_Behavior.beeRights+=2;
+    News.text = "The bee citizens felt they are respected by the government!";
+  }
+
+  public void BuildPS(){
+    Map_Behavior.flowerDensity+=2;
+    News.text = "The flower begins to blossom!";
+  }
+
+  public void BuildBH(){
+    Map_Behavior.lifeExpectancy+=2;
+    News.text = "More bee citizens can enjoy the health care provided by the government.";
+  }
+
+  public void BuildDC(){
+    Map_Behavior.happiness+=2;
+    News.text = "Bee citizens are having fun in the dance club.";
+  }
 }
