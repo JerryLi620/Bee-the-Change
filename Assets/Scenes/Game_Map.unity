@@ -1612,7 +1612,6 @@ GameObject:
   - component: {fileID: 274527363}
   - component: {fileID: 274527365}
   - component: {fileID: 274527364}
-  - component: {fileID: 274527366}
   m_Layer: 5
   m_Name: HoneyBar
   m_TagString: Untagged
@@ -1653,26 +1652,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
   honeySlider: {fileID: 274527365}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -1685,8 +1684,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 2068285924}
 --- !u!114 &274527365
@@ -1740,25 +1739,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &274527366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274527362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
 --- !u!1 &284897391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1794,6 @@ GameObject:
   m_Component:
   - component: {fileID: 336956486}
   - component: {fileID: 336956489}
-  - component: {fileID: 336956488}
   - component: {fileID: 336956487}
   m_Layer: 5
   m_Name: PopBar
@@ -1853,48 +1832,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 336956485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
---- !u!114 &336956488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 336956485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
-  honeySlider: {fileID: 336956489}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
+  honeySlider: {fileID: 274527365}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -1907,8 +1867,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 1969473733}
 --- !u!114 &336956489
@@ -4624,7 +4584,12 @@ MonoBehaviour:
   flowerStat: 0
   lifeStat: 0
   hapStat: 0
-  honeyBar: {fileID: 0}
+  popBar: {fileID: 336956487}
+  honeyBar: {fileID: 274527364}
+  brBar: {fileID: 975388177}
+  flowerBar: {fileID: 1075356828}
+  lifeBar: {fileID: 1879122823}
+  hapBar: {fileID: 1595000696}
 --- !u!4 &865040146
 Transform:
   m_ObjectHideFlags: 0
@@ -5042,7 +5007,6 @@ GameObject:
   m_Component:
   - component: {fileID: 975388176}
   - component: {fileID: 975388179}
-  - component: {fileID: 975388178}
   - component: {fileID: 975388177}
   m_Layer: 5
   m_Name: BrBar
@@ -5081,48 +5045,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 975388175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
---- !u!114 &975388178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975388175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
-  honeySlider: {fileID: 975388179}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
+  honeySlider: {fileID: 274527365}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -5135,8 +5080,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 432902140}
 --- !u!114 &975388179
@@ -5604,7 +5549,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1075356827}
   - component: {fileID: 1075356830}
-  - component: {fileID: 1075356829}
   - component: {fileID: 1075356828}
   m_Layer: 5
   m_Name: FlowerBar
@@ -5643,48 +5587,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075356826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
---- !u!114 &1075356829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075356826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
-  honeySlider: {fileID: 1075356830}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
+  honeySlider: {fileID: 274527365}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -5697,8 +5622,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 2066779573}
 --- !u!114 &1075356830
@@ -7765,7 +7690,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1595000695}
   - component: {fileID: 1595000698}
-  - component: {fileID: 1595000697}
   - component: {fileID: 1595000696}
   m_Layer: 5
   m_Name: HapBar
@@ -7804,48 +7728,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1595000694}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
---- !u!114 &1595000697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595000694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
-  honeySlider: {fileID: 1595000698}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
+  honeySlider: {fileID: 274527365}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -7858,8 +7763,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 1758790430}
 --- !u!114 &1595000698
@@ -9270,7 +9175,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1879122822}
   - component: {fileID: 1879122825}
-  - component: {fileID: 1879122824}
   - component: {fileID: 1879122823}
   m_Layer: 5
   m_Name: LifeBar
@@ -9309,48 +9213,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1879122821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popStat: 0
-  honeyStat: 0
-  brStat: 0
-  flowerStat: 0
-  lifeStat: 0
-  hapStat: 0
-  honeyBar: {fileID: 0}
---- !u!114 &1879122824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879122821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popSlider: {fileID: 0}
-  honeySlider: {fileID: 1879122825}
-  brSlider: {fileID: 0}
-  flowerSlider: {fileID: 0}
-  lifeSlider: {fileID: 0}
-  hapSlider: {fileID: 0}
+  popSlider: {fileID: 336956489}
+  honeySlider: {fileID: 274527365}
+  brSlider: {fileID: 975388179}
+  flowerSlider: {fileID: 1075356830}
+  lifeSlider: {fileID: 1879122825}
+  hapSlider: {fileID: 1595000698}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.052130222, b: 0, a: 1}
-    key1: {r: 1, g: 0.9572143, b: 0.023584902, a: 1}
-    key2: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
-    key3: {r: 0.15791413, g: 0.9339623, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 21627
-    ctime1: 43253
-    ctime2: 65535
-    ctime3: 65535
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -9363,8 +9248,8 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
+    m_Mode: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 1374604496}
 --- !u!114 &1879122825

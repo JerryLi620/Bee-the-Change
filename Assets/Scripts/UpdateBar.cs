@@ -6,12 +6,12 @@ using System;
 
 public class UpdateBar : MonoBehaviour
 {
-    public double popStat;
-    public double honeyStat;
-    public double brStat;
-    public double flowerStat;
-    public double lifeStat;
-    public double hapStat;
+    public float popStat;
+    public float honeyStat;
+    public float brStat;
+    public float flowerStat;
+    public float lifeStat;
+    public float hapStat;
 
     public HealthBar popBar;
     public HealthBar honeyBar;
@@ -23,33 +23,33 @@ public class UpdateBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        popBar.SetHealth(50.0d);
-        honeyBar.SetHealth(50.0d);
-        brBar.SetHealth(50.0d);
-        flowerBar.SetHealth(50.0d);
-        lifeBar.SetHealth(50.0d);
-        hapBar.SetHealth(50.0d);
+        popBar.SetPop(50.0f);
+        honeyBar.SetHoney(50.0f);
+        brBar.SetBr(50.0f);
+        flowerBar.SetFlower(50.0f);
+        lifeBar.SetLife(50.0f);
+        hapBar.SetHap(50.0f);
     }
 
     void Update()
     {
-        honeyStat = Map_Behavior.honeyProduction;
-        honeyBar.SetHealth(honeyStat);
+        honeyStat = (float)Map_Behavior.honeyProduction;
+        honeyBar.SetHoney(honeyStat);
 
-        popStat = Map_Behavior.popularity;
-        popBar.SetHealth(popStat);
+        popStat = (float)Map_Behavior.popularity;
+        popBar.SetPop(popStat);
 
-        brStat = Map_Behavior.beeRights;
-        brBar.SetHealth(brStat);
+        brStat = (float)Map_Behavior.beeRights;
+        brBar.SetBr(brStat);
 
-        flowerStat = Map_Behavior.flowerDensity;
-        flowerBar.SetHealth(flowerStat);
+        flowerStat = (float)Map_Behavior.flowerDensity;
+        flowerBar.SetFlower(flowerStat);
 
-        lifeStat = Map_Behavior.lifeExpectancy;
-        lifeBar.SetHealth(lifeStat);
+        lifeStat = (float)Map_Behavior.lifeExpectancy;
+        lifeBar.SetLife(lifeStat);
 
-        hapStat = Map_Behavior.happiness;
-        hapBar.SetHealth(hapStat);
+        hapStat = (float)Map_Behavior.happiness;
+        hapBar.SetHap(hapStat);
     }
 
 }
