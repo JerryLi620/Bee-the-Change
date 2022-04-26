@@ -1,34 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class UpdateBar : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    public int currentStat;
 
     public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(50);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(currentStat != Map_Behavior.honeyProduction)
         {
-            newStat(5);
+           healthBar.SetHealth(Map_Behavior.honeyProduction);
         }
+   
     }
 
-    void newStat(int change)
-    {
-        currentHealth += change;
 
-        healthBar.SetHealth(currentHealth);
-    }
 }

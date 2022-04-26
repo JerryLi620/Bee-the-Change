@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;
+    public Slider honeySlider;
     public Gradient gradient;
     public Image fill;
 
-    public void SetMaxHealth(int health)
+    public void SetMaxHealth(int stat)
     {
-        slider.maxValue = health;
-        slider.value = health;
+        honeySlider.maxValue = stat;
+        honeySlider.value = stat;
 
         fill.color = gradient.Evaluate(1f);
     }
 
-    public void SetHealth(int health)
+    public void SetHealth(int stat)
     {
-        slider.value = health;
-        fill.color = gradient.Evaluate(slider.normalizedValue);
+        honeySlider.value = stat;
+        fill.color = gradient.Evaluate(honeySlider.normalizedValue);
     }
 
 }

@@ -1521,6 +1521,7 @@ GameObject:
   - component: {fileID: 274527363}
   - component: {fileID: 274527365}
   - component: {fileID: 274527364}
+  - component: {fileID: 274527366}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -1561,7 +1562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dad26a3b74a420aa7d8e5c5247851e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 274527365}
+  honeySlider: {fileID: 274527365}
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0.052130222, b: 0, a: 1}
@@ -1639,10 +1640,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
-  m_Value: 100
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &274527366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274527362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a3410a905b34cc894ce7600bb62a7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStat: 50
+  healthBar: {fileID: 274527364}
 --- !u!1 &284897391
 GameObject:
   m_ObjectHideFlags: 0
