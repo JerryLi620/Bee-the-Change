@@ -34,7 +34,7 @@ public class HealthBar : MonoBehaviour
         hapSlider.maxValue = stat;
         hapSlider.value = stat / 2.0f;
 
-        fill.color = gradient.Evaluate(1f);
+        
     }
 
     public void Start()
@@ -45,31 +45,31 @@ public class HealthBar : MonoBehaviour
     public void SetHoney(float stat)
     {
         honeySlider.value = stat;
-        fill.color = gradient.Evaluate(honeySlider.normalizedValue);
+
     }
     public void SetPop(float stat)
     {
         popSlider.value = stat;
-        fill.color = gradient.Evaluate(popSlider.normalizedValue);
+
     }
     public void SetBr(float stat)
     {
         brSlider.value = stat;
-        fill.color = gradient.Evaluate(brSlider.normalizedValue);
+
     }
     public void SetFlower(float stat)
     {
         flowerSlider.value = stat;
-        fill.color = gradient.Evaluate(flowerSlider.normalizedValue);
+
     }
     public void SetLife(float stat)
     {
         lifeSlider.value = stat;
-        fill.color = gradient.Evaluate(lifeSlider.normalizedValue);
+
     }
     public void SetHap(float stat)
     {
         hapSlider.value = stat;
-        fill.color = gradient.Evaluate(hapSlider.normalizedValue);
+
     }
 }
