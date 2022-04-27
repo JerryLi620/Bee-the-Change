@@ -364,9 +364,9 @@ public class RandomEvent : MonoBehaviour
         }
 
     private delegate void RandomFunction();
+    private List<RandomFunction> FunctionList = new List<RandomFunction>();
+    private List<int> UsedNumbers = new List<int>();
     public void GenerateRandomEvent(){
-        List<RandomFunction> FunctionList = new List<RandomFunction>();
-
         FunctionList.Add(Rainstorm);
         FunctionList.Add(ForestFire);
         FunctionList.Add(Hurricane);
@@ -379,6 +379,13 @@ public class RandomEvent : MonoBehaviour
         FunctionList.Add(Poverty);
         FunctionList.Add(Skip);
 
-        FunctionList[Random.Range(0, FunctionList.Count)]();
+        int number = Random.Range(0, FunctionList.Count);
+
+        while(UsedNumbers.Contains(number))
+        {
+            number = Random.Range(0, FunctionList.Count);
+        }
+        UsedNumbers.Add(number);
+        FunctionList[number]();
     }
     }

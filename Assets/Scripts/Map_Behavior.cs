@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Map_Behavior : MonoBehaviour
 {
-  public static double popularity = 50;
+  public static double popularity = 50.0;
   public static int honeyProduction = 50;
   public static int beeRights = 50;
   public static int flowerDensity = 50;
