@@ -244,7 +244,8 @@ public class RandomEvent : MonoBehaviour
 
     private delegate void RandomFunction();
     private List<RandomFunction> FunctionList = new List<RandomFunction>();
-    private List<int> UsedNumbers = new List<int>();
+    private static List<int> UsedNumbers = new List<int>();
+
     public void GenerateRandomEvent(){
         FunctionList.Add(Rainstorm);
         FunctionList.Add(ForestFire);
