@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class UpdateBar : MonoBehaviour
 {
@@ -20,6 +21,13 @@ public class UpdateBar : MonoBehaviour
     public HealthBar lifeBar;
     public HealthBar hapBar;
 
+    public TMP_Text PopCount;
+    public TMP_Text HPCount;
+    public TMP_Text BRCount;
+    public TMP_Text FDCount;
+    public TMP_Text LECount;
+    public TMP_Text OHCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +37,12 @@ public class UpdateBar : MonoBehaviour
         flowerBar.SetFlower(50.0f);
         lifeBar.SetLife(50.0f);
         hapBar.SetHap(50.0f);
+        PopCount.text = Map_Behavior.popularity.ToString("0.0");
+        HPCount.text = Map_Behavior.honeyProduction.ToString();
+        BRCount.text = Map_Behavior.beeRights.ToString();
+        FDCount.text = Map_Behavior.flowerDensity.ToString();
+        LECount.text = Map_Behavior.lifeExpectancy.ToString();
+        OHCount.text = Map_Behavior.happiness.ToString();
     }
 
     void Update()
@@ -50,6 +64,13 @@ public class UpdateBar : MonoBehaviour
 
         hapStat = (float)Map_Behavior.happiness;
         hapBar.SetHap(hapStat);
+
+        PopCount.text = Map_Behavior.popularity.ToString("0.0");
+        HPCount.text = Map_Behavior.honeyProduction.ToString();
+        BRCount.text = Map_Behavior.beeRights.ToString();
+        FDCount.text = Map_Behavior.flowerDensity.ToString();
+        LECount.text = Map_Behavior.lifeExpectancy.ToString();
+        OHCount.text = Map_Behavior.happiness.ToString();
     }
 
 }
