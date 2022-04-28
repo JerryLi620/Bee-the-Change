@@ -14,6 +14,7 @@ public class HealthBar : MonoBehaviour
     public Gradient gradient;
     public Image fill;
 
+
     public void SetMaxHealth(float stat)
     {
         honeySlider.maxValue = stat;
@@ -34,12 +35,13 @@ public class HealthBar : MonoBehaviour
         hapSlider.maxValue = stat;
         hapSlider.value = stat / 2.0f;
 
-        
     }
+
 
     public void Start()
     {
         SetMaxHealth(100.0f);
+
     }
 
     public void SetHoney(float stat)
