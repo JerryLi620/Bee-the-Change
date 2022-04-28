@@ -239,14 +239,15 @@ public class RandomEvent : MonoBehaviour
         Map_Behavior.honeyProduction += honeyProductionChange2;
         Map_Behavior.beeRights += beeRightsChange2;
         Map_Behavior.flowerDensity += flowerDensityChange2;
-        News.text = ""+News2;
+        News.text = ""+ News2;
         }
 
-    private delegate void RandomFunction();
-    private List<RandomFunction> FunctionList = new List<RandomFunction>();
+    public delegate void RandomFunction();
+    public List<RandomFunction> FunctionList = new List<RandomFunction>();
     private static List<int> UsedNumbers = new List<int>();
 
-    public void GenerateRandomEvent(){
+    public void SetUpEvents()
+    {
         FunctionList.Add(Rainstorm);
         FunctionList.Add(ForestFire);
         FunctionList.Add(Hurricane);
@@ -258,6 +259,9 @@ public class RandomEvent : MonoBehaviour
         FunctionList.Add(Influenza);
         FunctionList.Add(Poverty);
         FunctionList.Add(Skip);
+    }
+
+    public void GenerateRandomEvent(){
 
         int number = Random.Range(0, FunctionList.Count);
 
@@ -266,6 +270,7 @@ public class RandomEvent : MonoBehaviour
             number = Random.Range(0, FunctionList.Count);
         }
         UsedNumbers.Add(number);
+        print(FunctionList.Count);
         FunctionList[number]();
     }
     }

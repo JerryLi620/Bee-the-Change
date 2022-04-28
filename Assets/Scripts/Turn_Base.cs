@@ -22,14 +22,16 @@ public class Turn_Base: MonoBehaviour
     public RandomEvent re;
     void Start()
     {
+
+        re.SetUpEvents();
         state = TurnState.START;
         re.GenerateRandomEvent();
         SetupGame();
+
     }
 
     void SetupGame()
     {
-        Debug.Log("start");
         Button1.gameObject.SetActive(false);
         Button2.gameObject.SetActive(false);
         Button3.gameObject.SetActive(false);
