@@ -16,11 +16,11 @@ public class DataDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        honeyText.text = "Honey Productivity : " + Map_Behavior.honeyProduction;
-        beeText.text = "Bee Rights : " + Map_Behavior.beeRights;
-        flowerText.text = "Flower Density : " + Map_Behavior.flowerDensity;
-        lifeText.text = "Life Expectancy : " + Map_Behavior.lifeExpectancy;
-        happinessText.text = "Overall Happiness : " + Map_Behavior.happiness;
-        popularityText.text = "Popularity : " + Map_Behavior.popularity;
+        honeyText.text = "Honey Productivity : ";
+        beeText.text = "Bee Rights : ";
+        flowerText.text = "Flower Density : ";
+        lifeText.text = "Life Expectancy : ";
+        happinessText.text = "Overall Happiness : ";
+        popularityText.text = "Popularity : ";
     }
 }
