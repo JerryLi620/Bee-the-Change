@@ -10,7 +10,7 @@ public class Turn_Base: MonoBehaviour
     public TurnState state;
     public Text DialogueText;
     public Text TurnCount;
-    public int TurnNumber = 0;
+    public int TurnNumber = 1;
     public Button Button1;
     public Button Button2;
     public Button Button3;
@@ -76,7 +76,7 @@ public class Turn_Base: MonoBehaviour
             Button3.gameObject.SetActive(false);
         }
         else if (state == TurnState.NEXT){
-            DialogueText.text = "Clicked to start the next round.";
+            DialogueText.text = "Click to start the next round.";
             Button1.gameObject.SetActive(false);
             Button2.gameObject.SetActive(false);
             Button3.gameObject.SetActive(true);
