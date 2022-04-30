@@ -6344,7 +6344,7 @@ MonoBehaviour:
   state: 0
   DialogueText: {fileID: 700275563}
   TurnCount: {fileID: 635146769}
-  TurnNumber: 0
+  TurnNumber: 1
   Button1: {fileID: 389074146}
   Button2: {fileID: 1656567702}
   Button3: {fileID: 640929807}
@@ -7017,7 +7017,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 50
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -7041,7 +7041,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -53.019043, y: 0, z: -63.769043, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
