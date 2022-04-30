@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public enum TurnState {START, POLICY, BUILD, NEXT, WON, LOST}
 public class Turn_Base: MonoBehaviour
@@ -14,6 +15,7 @@ public class Turn_Base: MonoBehaviour
     public Button Button1;
     public Button Button2;
     public Button Button3;
+    public Button Button4;
     public TMP_Text Policy1;
     public TMP_Text Policy2;
     public TMP_Text Accident;
@@ -35,6 +37,7 @@ public class Turn_Base: MonoBehaviour
         Button1.gameObject.SetActive(false);
         Button2.gameObject.SetActive(false);
         Button3.gameObject.SetActive(false);
+        Button4.gameObject.SetActive(false);
         state = TurnState.POLICY;
         PlayerTurn();
     }
@@ -58,6 +61,11 @@ public class Turn_Base: MonoBehaviour
         state = TurnState.POLICY;
         PlayerTurn();
         re.GenerateRandomEvent();
+    }
+
+    public void ResetScene()
+    {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void PlayerTurn()
@@ -100,6 +108,7 @@ public class Turn_Base: MonoBehaviour
             Button1.gameObject.SetActive(false);
             Button2.gameObject.SetActive(false);
             Button3.gameObject.SetActive(false);
+            Button4.gameObject.SetActive(true);
         }
         else if (state == TurnState.LOST)
         {
@@ -107,6 +116,7 @@ public class Turn_Base: MonoBehaviour
           Button1.gameObject.SetActive(false);
           Button2.gameObject.SetActive(false);
           Button3.gameObject.SetActive(false);
+          Button4.gameObject.SetActive(true);
         }
     }
 
