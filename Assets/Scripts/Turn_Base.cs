@@ -66,6 +66,12 @@ public class Turn_Base: MonoBehaviour
     public void ResetScene()
     {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+      Map_Behavior.popularity = 50.0;
+      Map_Behavior.honeyProduction = 50;
+      Map_Behavior.beeRights = 50;
+      Map_Behavior.flowerDensity = 50;
+      Map_Behavior.lifeExpectancy = 50;
+      Map_Behavior.happiness = 50;
     }
 
     void PlayerTurn()
