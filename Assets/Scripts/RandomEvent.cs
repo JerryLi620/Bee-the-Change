@@ -46,7 +46,7 @@ public class RandomEvent : MonoBehaviour
         News2 = "The rainstorm lasted for four days. Because of good planning, most of the damage was mitigated. Flowers in the surrounding area are thriving after the heavy rains.";
         }
     void ForestFire(){
-        Incident.text = "A forest fire is spreading across the eastern part of the honeycomb, destroying flowers and trees rapidly.";
+        Incident.text = "A forest fire is spreading across the honeycomb, destroying flowers and trees rapidly.";
 
 
         Policy1.text = "Focus fire department on mitigating damage to urban areas";
@@ -173,7 +173,7 @@ public class RandomEvent : MonoBehaviour
         lifeExpectancyChange1 = 3;
         honeyProductionChange1 = -5;
         beeRightsChange1 = 2;
-        News1 = "The hive quickly overcomes the Influenza chrisis";
+        News1 = "The hive quickly overcomes the Influenza crisis";
         happinessChange2 = -2;
         lifeExpectancyChange2 = -3;
         honeyProductionChange2 = -3;
@@ -184,7 +184,7 @@ public class RandomEvent : MonoBehaviour
       }
     void Poverty(){
         Incident.text = "Some honeycombs on the island are struggling to produce honey and many bees are dropping below the poverty line.";
-        Policy1.text = "Provide food stamps and a housing stipend for the bees in poverty";
+        Policy1.text = "Provide honey stamps and a housing stipend for the bees in poverty";
         Policy2.text = "Send flower seeds and fertilization supplies";
 
         happinessChange1 = 4;
