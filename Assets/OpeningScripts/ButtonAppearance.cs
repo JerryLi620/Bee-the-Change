@@ -9,7 +9,7 @@ public class ButtonAppearance : MonoBehaviour
     IEnumerator Start()
     {
         Option_1.SetActive(false);
-        yield return new WaitForSeconds(12f);
+        yield return new WaitForSeconds(6f);
         Option_1.SetActive(true);
     }
 }
