@@ -110,7 +110,7 @@ public class Turn_Base: MonoBehaviour
     {
         if (state == TurnState.WON)
         {
-            DialogueText.text = "You won!";
+            DialogueText.text = "You are successfully reelected!";
             Button1.gameObject.SetActive(false);
             Button2.gameObject.SetActive(false);
             Button3.gameObject.SetActive(false);
@@ -118,7 +118,7 @@ public class Turn_Base: MonoBehaviour
         }
         else if (state == TurnState.LOST)
         {
-          DialogueText.text = "You lost.";
+          DialogueText.text = "Sadly, you are beat by your competitor.";
           Button1.gameObject.SetActive(false);
           Button2.gameObject.SetActive(false);
           Button3.gameObject.SetActive(false);
