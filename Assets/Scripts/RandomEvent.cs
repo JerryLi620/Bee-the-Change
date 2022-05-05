@@ -70,7 +70,7 @@ public class RandomEvent : MonoBehaviour
         beeRightsChange1 = -3;
         honeyProductionChange2 = -3;
         flowerDensityChange1 = -2;
-        News1 = "Bee actists are protesting the forced evacuation.";
+        News1 = "Bee activists are protesting the forced evacuation.";
 
         Policy2.text = "Encourage evacuation for everyone in the area, continuing honey production through the hurricane.";
         lifeExpectancyChange2 = -3;
@@ -150,7 +150,7 @@ public class RandomEvent : MonoBehaviour
       }
     void Hire(){
         Incident.text = "Southern honeycombs are struggling to hire enough workers.";
-        Policy1.text = "Increase the wage rate in sounthern main cities.";
+        Policy1.text = "Increase the wage rate in southern main cities.";
         Policy2.text = "Try to invent better machines for honey factories.";
 
         happinessChange1 = 5;
@@ -191,7 +191,7 @@ public class RandomEvent : MonoBehaviour
         honeyProductionChange1 = -3;
         beeRightsChange1 = 4;
         flowerDensityChange1 = -3;
-        News1="Poverty is halfed through your generosity";
+        News1="Poverty is halved through your generosity";
 
 
         happinessChange2 = -3;

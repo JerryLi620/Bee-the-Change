@@ -389,8 +389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                                     Clicked to start your Journey   
-    \n\n"
+  m_text: "                                     Click to start your Journey    \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 32f545d3f56994e36a29553521ce9857, type: 2}
   m_sharedMaterial: {fileID: 4991060888141461096, guid: 32f545d3f56994e36a29553521ce9857, type: 2}
@@ -1700,7 +1699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Break rooms can help increase bee right
+  m_text: Break rooms can help increase bee rights
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 32f545d3f56994e36a29553521ce9857, type: 2}
   m_sharedMaterial: {fileID: 4991060888141461096, guid: 32f545d3f56994e36a29553521ce9857, type: 2}
