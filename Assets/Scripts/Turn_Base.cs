@@ -22,6 +22,17 @@ public class Turn_Base: MonoBehaviour
     public TMP_Text News;
 
     public RandomEvent re;
+
+    public Image ArrowHP1;
+    public Image ArrowHP2;
+    public Image ArrowBR1;
+    public Image ArrowBR2;
+    public Image ArrowFD1;
+    public Image ArrowFD2;
+    public Image ArrowLE1;
+    public Image ArrowLE2;
+    public Image ArrowOH1;
+    public Image ArrowOH2;
     void Start()
     {
 
@@ -59,6 +70,16 @@ public class Turn_Base: MonoBehaviour
         Button1.enabled = true;
         Button2.enabled = true;
         state = TurnState.POLICY;
+        ArrowOH1.enabled = false;
+        ArrowOH2.enabled = false;
+        ArrowHP1.enabled = false;
+        ArrowHP2.enabled = false;
+        ArrowBR1.enabled = false;
+        ArrowBR2.enabled = false;
+        ArrowFD1.enabled = false;
+        ArrowFD2.enabled = false;
+        ArrowLE1.enabled = false;
+        ArrowLE2.enabled = false;
         PlayerTurn();
         re.GenerateRandomEvent();
     }

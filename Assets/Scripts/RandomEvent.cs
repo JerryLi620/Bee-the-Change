@@ -26,7 +26,16 @@ public class RandomEvent : MonoBehaviour
     private string News1 = "";
     private string News2 = "";
 
-
+    public Image ArrowHP1;
+    public Image ArrowHP2;
+    public Image ArrowBR1;
+    public Image ArrowBR2;
+    public Image ArrowFD1;
+    public Image ArrowFD2;
+    public Image ArrowLE1;
+    public Image ArrowLE2;
+    public Image ArrowOH1;
+    public Image ArrowOH2;
 
     void Rainstorm(){
         Incident.text = "A rainstorm is expected to last for an unknown number of days, flooding the western side of the honeycomb.";
@@ -223,16 +232,69 @@ public class RandomEvent : MonoBehaviour
       }
 
     public void Policy1ChooseResult(){
+
+      if (happinessChange1 > 0){
+        ArrowOH1.enabled = true;
+      }
+      else if(happinessChange1 < 0){
+        ArrowOH2.enabled = true;
+      }
+      else{
+        ArrowOH1.enabled = false;
+        ArrowOH2.enabled = false;
+      }
+
+      if (lifeExpectancyChange1 > 0){
+        ArrowLE1.enabled = true;
+      }
+      else if(lifeExpectancyChange1 < 0){
+        ArrowLE2.enabled = true;
+      }
+      else{
+        ArrowLE1.enabled = false;
+        ArrowLE1.enabled = false;
+      }
+
+      if (honeyProductionChange1 > 0){
+        ArrowHP1.enabled = true;
+      }
+      else if(lifeExpectancyChange1 < 0){
+        ArrowHP2.enabled = true;
+      }
+      else{
+        ArrowHP1.enabled = false;
+        ArrowHP2.enabled = false;
+      }
+
+      if (beeRightsChange1 > 0){
+        ArrowBR1.enabled = true;
+      }
+      else if(lifeExpectancyChange1 < 0){
+        ArrowBR2.enabled = true;
+      }
+      else{
+        ArrowBR1.enabled = false;
+        ArrowBR2.enabled = false;
+      }
+
+      if (flowerDensityChange1 > 0){
+        ArrowFD1.enabled = true;
+      }
+      else if(flowerDensityChange1 < 0){
+        ArrowFD2.enabled = true;
+      }
+      else{
+        ArrowFD1.enabled = false;
+        ArrowFD2.enabled = false;
+      }
         Map_Behavior.happiness += happinessChange1;
         Map_Behavior.lifeExpectancy += lifeExpectancyChange1;
         Map_Behavior.honeyProduction += honeyProductionChange1;
         Map_Behavior.beeRights += beeRightsChange1;
         Map_Behavior.flowerDensity += flowerDensityChange1;
         News.text = ""+News1;
+      }
 
-
-
-        }
     public void Policy2ChooseResult(){
         Map_Behavior.happiness += happinessChange2;
         Map_Behavior.lifeExpectancy += lifeExpectancyChange2;
@@ -240,6 +302,62 @@ public class RandomEvent : MonoBehaviour
         Map_Behavior.beeRights += beeRightsChange2;
         Map_Behavior.flowerDensity += flowerDensityChange2;
         News.text = ""+ News2;
+
+        if (happinessChange2 > 0){
+          ArrowOH1.enabled = true;
+        }
+        else if(happinessChange2 < 0){
+          ArrowOH2.enabled = true;
+        }
+        else{
+          ArrowOH1.enabled = false;
+          ArrowOH2.enabled = false;
+        }
+
+        if (lifeExpectancyChange2 > 0){
+          ArrowLE1.enabled = true;
+        }
+        else if(lifeExpectancyChange2 < 0){
+          ArrowLE2.enabled = true;
+        }
+        else{
+          ArrowLE1.enabled = false;
+          ArrowLE1.enabled = false;
+        }
+
+        if (honeyProductionChange2 > 0){
+          ArrowHP1.enabled = true;
+        }
+        else if(lifeExpectancyChange2 < 0){
+          ArrowHP2.enabled = true;
+        }
+        else{
+          ArrowHP1.enabled = false;
+          ArrowHP2.enabled = false;
+        }
+
+        if (beeRightsChange2 > 0){
+          ArrowBR1.enabled = true;
+        }
+        else if(lifeExpectancyChange2 < 0){
+          ArrowBR2.enabled = true;
+        }
+        else{
+          ArrowBR1.enabled = false;
+          ArrowBR2.enabled = false;
+        }
+
+        if (flowerDensityChange2 > 0){
+          ArrowFD1.enabled = true;
+        }
+        else if(flowerDensityChange2 < 0){
+          ArrowFD2.enabled = true;
+        }
+        else{
+          ArrowFD1.enabled = false;
+          ArrowFD2.enabled = false;
+        }
+
         }
 
     public delegate void RandomFunction();
